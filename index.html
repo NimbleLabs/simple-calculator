@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Simple Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>This is a Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <p>I merged my new branch***</p>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <div>
+      <input type="number" id="operand1" />
+    </div>
+    <div>
+      <input type="number" id="operand2" />
+    </div>
+    <div>
+      <select id="operator">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+      </select>
+    </div>
+    <div>
+      <button onclick="onCalculateClick()">Calculate</button>
+    </div>
+    <div>
+      <input type="number" id="result" />
+    </div>
   </body>
 </html>
